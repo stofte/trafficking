@@ -1,0 +1,21 @@
+{
+    "folders":
+    [
+        {
+            "path": "src",
+	    "file_include_patterns": ["*.js", "*.jade", "*.json", "*.css"],
+"folder_exclude_patterns": ["libs"],
+        },
+        {
+            "file_include_patterns": ["*.md", "*.js", "*.json", "*.sublime-project", "*.bowerrc", "*.gitignore"],
+            "folder_exclude_patterns": ["*"],
+            "name": "config",
+            "path": "."
+        }
+    ],
+    "settings":
+    {
+        "translate_tabs_to_spaces": true,
+        "tab_size": 4
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "trafficking",
+  "version": "0.0.1",
+  "dependencies": {
+    "hammerjs": "2.0.3",
+    "requirejs": "2.1.15",
+    "threejs-build": "b1e2514db6"
+  },
+  "private": true,
+  "devDependencies": {
+    "almond": "~0.3.0"
+  }
+}

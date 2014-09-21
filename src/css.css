@@ -1,0 +1,9 @@
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit;}
+
+body { margin: 0; overflow: hidden; }
+canvas { 
+    /* TODO need to get three.js to not add style properties on canvas */
+    width: 100% !important; 
+    height: 100% !important; 
+}
