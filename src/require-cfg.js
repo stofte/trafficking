@@ -1,10 +1,14 @@
 require.config({
   deps: [
-    "app"
+    "main"
   ],
   shims: {
     "threejs-build": {
       exports: "THREE"
+    },
+    "OrbitControls": {
+      deps: ["threejs-build"],
+      exports: "THREE.OrbitControls"
     }
   },
   paths: {

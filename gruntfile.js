@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 				options: {
 					baseUrl: "src",
 					mainConfigFile: "src/require-cfg.js",
-					name: 'almond',
+					name: 'almond', // https://github.com/jrburke/almond
 					out: "src/min.js"
 				}
 			}

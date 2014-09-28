@@ -1,16 +1,5 @@
-require(['hammerjs', 'threejs-build'], function(Hammer) {
+define(['threejs-build'], function() {
     'use strict';
-
-    console.log('arguments', arguments);
-
-    var renderer = new THREE.WebGLRenderer();
-    
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    document.body.appendChild(renderer.domElement);
-    
-    var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.01, 1000);
-    camera.position.z = 1.5;
-
     var scene = new THREE.Scene();
     var sunlight = new THREE.DirectionalLight(0xcccccc, 1);
     sunlight.position.set(5,3,5)
@@ -36,11 +25,11 @@ require(['hammerjs', 'threejs-build'], function(Hammer) {
     var starMesh  = new THREE.Mesh(starGeometry, starMaterial);
     scene.add(starMesh);
 
-    function animate() {
-        requestAnimationFrame(animate);
-        groundMesh.rotation.y += 0.001;
-        renderer.render(scene, camera);
-    }
+    return {
+        scene: scene,
+        onRender: function() {
+            groundMesh.rotation.y += 0.001;
+        }
+    };
 
-    animate();
 });
