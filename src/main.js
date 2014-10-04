@@ -1,4 +1,4 @@
-require(['renderer', 'camera', 'scene', 'threejs-build'], function(renderer, camera, scene) {
+require(['renderer', 'camera', 'scene', 'cities', 'threejs-build'], function(renderer, camera, scene, cities) {
     'use strict';
 
     renderer.addRenderFunction(camera.onRender);
